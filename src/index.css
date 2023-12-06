@@ -1,0 +1,422 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  background-color: aliceblue;
+}
+
+.App {
+  background: linear-gradient(
+    rgb(81, 173, 81),
+    rgb(3, 120, 3),
+    rgb(81, 173, 81)
+  );
+  width: 100%;
+  border-radius: 30px;
+  border: 5px solid aliceblue;
+  box-sizing: border-box;
+}
+
+.conteinerCalculator {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+.logo {
+  width: 30%;
+  height: 100%;
+}
+
+.headerText {
+  margin-left: 5%;
+  width: 100%;
+  font-size: 30px;
+
+  padding: 0;
+}
+
+.mainBlock {
+  display: block;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.inputsAndSlidersConteiner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.priceBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.allResultsConteiner {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.monthlyPayment {
+  width: 25%;
+  text-align: center;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+.monthlyPayment div {
+  text-align: center;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 5%;
+}
+.tradeMargin {
+  align-items: center;
+  width: 25%;
+  margin-top: 4%;
+}
+.tradeMargin div {
+  text-align: center;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 5%;
+}
+.totalPriceInstallments {
+  text-align: center;
+  width: 25%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+.totalPriceInstallments div {
+  align-items: center;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 5%;
+}
+
+.containerButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.btnwhatsapp {
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(49, 0, 128);
+  background: linear-gradient(180deg, #fff849, #ffe600);
+  border-radius: 10px;
+  width: auto;
+  font-size: 24px;
+  margin-bottom: 1%;
+  padding: 20px 24px;
+}
+.btntelegram {
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(49, 0, 128);
+  background: linear-gradient(180deg, #fff849, #ffe600);
+  border-radius: 10px;
+  width: auto;
+  font-size: 24px;
+  margin-bottom: 1%;
+  padding: 20px 29px;
+}
+.btnPhone {
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(49, 0, 128);
+  background: linear-gradient(180deg, #fff849, #ffe600);
+  border-radius: 10px;
+  width: auto;
+  font-size: 24px;
+  margin-bottom: 1%;
+  padding: 20px 19px;
+}
+a {
+  text-decoration: none;
+}
+
+.btnwhatsapp:hover {
+  background: #25d366;
+  color: white;
+}
+
+.btntelegram:hover {
+  background: #1500ff;
+  color: white;
+}
+
+.btnPhone:hover {
+  background: #1b281a;
+  color: white;
+}
+
+/* Стили для слайдера */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Стили для полосы слайдера */
+.slider {
+  -webkit-appearance: none;
+
+  width: 100%;
+  height: 5px;
+  background: #1ca9a9;
+  border-radius: 5px;
+}
+.input {
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-top: 2%;
+  padding: 5%;
+  margin-bottom: -1%;
+  display: flex;
+  align-items: center;
+}
+
+/* Стили для фокуса на вводе */
+.input:focus {
+  border-radius: 6px;
+  border-color: #007bff;
+  outline: none;
+  font-size: 18px;
+  padding: 5%;
+}
+
+/* Стили для слайдера */
+.slider::-webkit-slider-thumb {
+  background: white;
+  -webkit-appearance: none;
+  background-color: #00ff0d;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Медиа-запрос для телефонов */
+@media only screen and (max-width: 768px) {
+  .App {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header {
+    width: auto;
+    display: block;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .logo {
+    padding-right: 2%;
+    width: 90%;
+  }
+
+  .headerText {
+    margin-right: 2%;
+    padding-right: 2%;
+    width: auto;
+    margin-top: 3%;
+    font-size: 20px;
+    margin-bottom: 4%;
+  }
+  .mainBlock {
+    display: block;
+    flex-direction: column;
+    width: auto;
+  }
+  .priceBlock {
+    width: auto;
+    margin-bottom: 3%;
+  }
+  .priceProduct {
+    font-size: 16px;
+  }
+
+  .inputsAndSlidersConteiner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    font-size: 15px;
+    padding: 5%;
+    margin-top: 0;
+  }
+  .input:focus {
+    border-color: #007bff;
+    outline: none;
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .allResultsConteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2%;
+  }
+  .monthlyPayment {
+    background-color: white;
+    display: block;
+    justify-content: center;
+    color: black;
+    border-radius: 10px;
+    margin: 0 0;
+    padding: 1% 2%;
+  }
+
+  .monthlyPayment :last-child {
+    font-size: 18px;
+    color: blueviolet;
+    margin: 0 0;
+    font-weight: 600;
+  }
+
+  .tradeMargin {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 0 0;
+    padding: 1% 2%;
+  }
+  .tradeMargin :last-child {
+    font-size: 18px;
+    color: blueviolet;
+    margin: 0 0;
+    font-weight: 600;
+  }
+
+  .totalPriceInstallments {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 0 0;
+    padding: 1% 2%;
+  }
+  .totalPriceInstallments :last-child {
+    font-size: 18px;
+    color: blueviolet;
+    margin: 0 0;
+    font-weight: 600;
+  }
+
+  .isMobile {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+    padding-bottom: 15%;
+  }
+  .monthlyPayment div .isMobile div {
+    align-items: center;
+    font-weight: 700;
+    color: black;
+    font-size: 12px;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .tradeMargin div .isMobile div {
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: black;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .totalPriceInstallments div .isMobile div {
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .containerButtons {
+    margin-top: 3%;
+  }
+  .wCont {
+    align-items: center;
+    width: 100%;
+  }
+  .tCont {
+    align-items: center;
+    width: 100%;
+
+    height: auto;
+  }
+  .phCont {
+    align-items: center;
+    width: 100%;
+
+    height: auto;
+  }
+  .btnwhatsapp {
+    width: auto;
+    padding: 15px 16px;
+    align-items: center;
+    border: 2px solid white;
+    background: #25d366;
+    color: white;
+    border-radius: 14px;
+    font-size: 16px;
+    margin: 0 0;
+  }
+  .btntelegram {
+    width: auto;
+    padding: 15px 19px;
+    align-items: center;
+    border: 2px solid white;
+    background: rgb(0, 157, 255);
+    color: white;
+    border-radius: 14px;
+    font-size: 16px;
+    margin: 0 0;
+  }
+  .btnPhone {
+    width: auto;
+    padding: 15px 12px;
+    align-items: center;
+    border: 2px solid white;
+    background: rgb(197, 197, 24);
+    color: white;
+    border-radius: 14px;
+    font-size: 16px;
+    margin: 0 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
