@@ -383,7 +383,8 @@ input::-webkit-inner-spin-button {
     padding: 15px 16px;
     align-items: center;
     border: 2px solid white;
-    background: #25d366;
+    /* background: #25d366; */
+    background-color: #437e2c;
     color: white;
     border-radius: 14px;
     font-size: 16px;
@@ -394,7 +395,9 @@ input::-webkit-inner-spin-button {
     padding: 15px 19px;
     align-items: center;
     border: 2px solid white;
-    background: rgb(0, 157, 255);
+    /* background: rgb(0, 157, 255); */
+    background-color: #007071;
+
     color: white;
     border-radius: 14px;
     font-size: 16px;
@@ -405,7 +408,8 @@ input::-webkit-inner-spin-button {
     padding: 15px 12px;
     align-items: center;
     border: 2px solid white;
-    background: blueviolet;
+    /* background: blueviolet; */
+    background-color: #a06b03;
     color: white;
     border-radius: 14px;
     font-size: 16px;
