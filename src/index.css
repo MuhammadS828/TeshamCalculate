@@ -384,7 +384,8 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border: 2px solid white;
     /* background: #25d366; */
-    background: #437e2c;
+    /* background: #437e2c; */
+    background: #77c249;
     color: white;
     border-radius: 14px;
     font-size: 16px;
@@ -396,7 +397,8 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border: 2px solid white;
     /* background: rgb(0, 157, 255); */
-    background: #007071;
+    /* background: #007071; */
+    background: #01afb0;
 
     color: white;
     border-radius: 14px;
@@ -409,7 +411,8 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border: 2px solid white;
     /* background: blueviolet; */
-    background: #a06b03;
+    /* background: #a06b03; */
+    background: #f7a81b;
     color: white;
     border-radius: 14px;
     font-size: 16px;
