@@ -2,8 +2,8 @@ import React from "react";
 
 const CommunButtons = () => {
   // Номер телефона для WhatsApp и Telegram
-  const phoneNumber = +79270000677;
-  const phoneNumberTelegram = "+79270000677";
+  const phoneNumber = +79280012725;
+  const phoneNumberTelegram = "+79280012725";
 
   // Формируем ссылки для WhatsApp, Telegram и телефонного звонка
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
