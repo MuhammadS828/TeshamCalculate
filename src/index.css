@@ -3,14 +3,19 @@ body {
   color: white;
   font-size: 20px;
   background-color: aliceblue;
+  height: 100%;
 }
 
 .App {
+  display: block;
+  justify-content: center;
   background-color: #02594a;
   width: 100%;
   border-radius: 30px;
   border: 5px solid aliceblue;
-  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  height: 100%;
 }
 
 .conteinerCalculator {
@@ -21,8 +26,9 @@ body {
   width: 100%;
 }
 .header {
+  display: block;
+  align-items: center;
   width: 100%;
-  display: flex;
   align-items: center;
   margin-bottom: 3%;
   margin-top: 2%;
@@ -31,13 +37,12 @@ body {
 .logo {
   width: 30%;
   height: 100%;
+  margin-bottom: 2%;
 }
 
 .headerText {
-  margin-left: 5%;
   width: 100%;
   font-size: 30px;
-
   padding: 0;
 }
 
@@ -121,8 +126,8 @@ body {
 .btnwhatsapp {
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(49, 0, 128);
-  background: linear-gradient(180deg, #fff849, #ffe600);
+  border: 2px solid white;
+  background: #77c249;
   border-radius: 10px;
   width: auto;
   font-size: 24px;
@@ -132,8 +137,8 @@ body {
 .btntelegram {
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(49, 0, 128);
-  background: linear-gradient(180deg, #fff849, #ffe600);
+  border: 2px solid white;
+  background: #01afb0;
   border-radius: 10px;
   width: auto;
   font-size: 24px;
@@ -143,8 +148,9 @@ body {
 .btnPhone {
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(49, 0, 128);
-  background: linear-gradient(180deg, #fff849, #ffe600);
+  border: 2px solid white;
+
+  background: #f7a81b;
   border-radius: 10px;
   width: auto;
   font-size: 24px;
@@ -153,21 +159,6 @@ body {
 }
 a {
   text-decoration: none;
-}
-
-.btnwhatsapp:hover {
-  background: #25d366;
-  color: white;
-}
-
-.btntelegram:hover {
-  background: #1500ff;
-  color: white;
-}
-
-.btnPhone:hover {
-  background: #1b281a;
-  color: white;
 }
 
 /* Стили для слайдера */
@@ -180,7 +171,6 @@ input::-webkit-inner-spin-button {
 /* Стили для полосы слайдера */
 .slider {
   -webkit-appearance: none;
-
   width: 100%;
   height: 5px;
   background: #1ca9a9;
@@ -197,15 +187,6 @@ input::-webkit-inner-spin-button {
   margin-bottom: -1%;
   display: flex;
   align-items: center;
-}
-
-/* Стили для фокуса на вводе */
-.input:focus {
-  border-radius: 6px;
-  border-color: #007bff;
-  outline: none;
-  font-size: 18px;
-  padding: 5%;
 }
 
 /* Стили для слайдера */
@@ -383,8 +364,7 @@ input::-webkit-inner-spin-button {
     padding: 15px 16px;
     align-items: center;
     border: 2px solid white;
-    /* background: #25d366; */
-    /* background: #437e2c; */
+
     background: #77c249;
     color: white;
     border-radius: 14px;
@@ -396,10 +376,7 @@ input::-webkit-inner-spin-button {
     padding: 15px 19px;
     align-items: center;
     border: 2px solid white;
-    /* background: rgb(0, 157, 255); */
-    /* background: #007071; */
     background: #01afb0;
-
     color: white;
     border-radius: 14px;
     font-size: 16px;
@@ -421,5 +398,164 @@ input::-webkit-inner-spin-button {
 
   a {
     text-decoration: none;
+  }
+}
+@media only screen and (min-width: 1920px) and (max-width: 2560px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 45px;
+    background-color: aliceblue;
+  }
+  .App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+    border: 10px solid aliceblue;
+  }
+  .header {
+    margin-top: 2%;
+  }
+
+  .logo {
+    width: 40%;
+    height: auto;
+    margin-bottom: 1%;
+  }
+
+  .headerText {
+    font-size: 60px;
+    margin-bottom: 0%;
+  }
+  .mainBlock {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .allResultsConteiner {
+    margin-top: 0;
+  }
+  .monthlyPayment div,
+  .tradeMargin div,
+  .totalPriceInstallments div {
+    font-size: 50px;
+  }
+
+  .slider {
+    height: 16px;
+  }
+
+  .input {
+    font-size: 45px;
+    padding: 8%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+
+  .isMobile div,
+  .containerButtons {
+    margin-top: 4%;
+  }
+  .slider::-webkit-slider-thumb {
+    background: white;
+    -webkit-appearance: none;
+    background-color: #00ff0d;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .btnwhatsapp {
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    background: #77c249;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 1%;
+    padding: 40px 48px;
+  }
+  .btntelegram {
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    background: #01afb0;
+    border-radius: 20px;
+    width: auto;
+    font-size: 48px;
+    margin-bottom: 1%;
+    padding: 40px 58px;
+  }
+  .btnPhone {
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    background: #f7a81b;
+    border-radius: 20px;
+    width: auto;
+    font-size: 48px;
+    margin-bottom: 1%;
+    padding: 40px 39px;
+  }
+  .monthlyPayment {
+    width: 25%;
+    text-align: center;
+    margin-left: 4%;
+    margin-top: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+  }
+  .monthlyPayment div {
+    text-align: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .monthlyPayment :last-child {
+    color: blueviolet;
+    font-weight: 600;
+  }
+  .tradeMargin {
+    align-items: center;
+    width: 25%;
+    margin-top: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+  }
+  .tradeMargin div {
+    text-align: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .tradeMargin :last-child {
+    color: blueviolet;
+    font-weight: 600;
+  }
+  .totalPriceInstallments {
+    text-align: center;
+    width: 25%;
+    margin-right: 4%;
+    margin-top: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+  }
+  .totalPriceInstallments div {
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .totalPriceInstallments :last-child {
+    color: blueviolet;
+    font-weight: 600;
   }
 }
